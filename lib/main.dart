@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
         body: SingleChildScrollView(
           child: Container(
             margin: const EdgeInsets.all(100),
-            color: Colors.amber,
+            color: Colors.black,
             child: Center(
               child: Column(
                 children: const [
