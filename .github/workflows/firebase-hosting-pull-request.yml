@@ -28,7 +28,7 @@ jobs:
       #   firebase-hosting-merge.yml のプルリクエストバージョンなのでやることは同じ
 
 
-      # - run: flutter build web //消す？
+      - run: flutter build web 
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
