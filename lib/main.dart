@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:neon/neon.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}): super(key: key);
+  const MyApp({Key? key}) : super(key: key);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -26,22 +25,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Neon(
-              text: 'TEST',
-              color: Colors.green,
-              fontSize: 50,
-              font: NeonFont.Beon,
-              glowing: true,
-              glowingDuration: const Duration(seconds: 3),
-              // flickeringText: true,
-              // flickeringLetters: [0, 1],
-            )
-          ],
+    return SafeArea(
+      child: Scaffold(
+        body: SingleChildScrollView(
+          child: Container(
+            margin: const EdgeInsets.all(100),
+            color: Colors.amber,
+            child: Center(
+              child: Column(
+                children: const [
+                  CircleAvatar(),
+                  Text('しんちゃん'),
+                  Text('大学生'),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );
